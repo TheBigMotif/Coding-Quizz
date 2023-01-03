@@ -8,33 +8,38 @@
     <link rel="stylesheet" href="./Assets/css/style.css" />
 </head>
 <body>
-    <header>
-        <h1>The Hardest Javascript Quizz Ever</h1>
-        <p>Praise the Lord</p>
-    </header>
+    <div class="question-container">
+        <div class="question-header">
+            <span>Score: <span id="score">0</span></span>
+            <span id="countdown">0</span>
+            </div>
+        <div class="question-body">
+            <div class="question-group active">
+                <h4>1. What is JS?</h4>
+                <div class="question-answer-row">
+                <input type="radio" name="a1">
+                <span>Javascript</span>
+                </div>
+                 <div class="question-answer-row">
+                <input type="radio" name="a1" valid="valid">
+                <span>Javascript</span>
+                </div>
+                 <div class="question-answer-row">
+                <input type="radio" name="a1">
+                <span>Javascript</span>
+                </div>
+                 <div class="question-answer-row">
+                <input type="radio" name="a1">
+                <span>Javascript</span>
+                </div>
 
-    <div class="startbtn"> <button> Start Quizz </button></div>
+            </div>
 
-<section id="q1">
-    <h1>What is javascript?</h1>
-</section>
-
-<section id="q2">
-    <h1>What is a .js file?</h1>
-</section>
-
-<section id="q3">
-    <h1>What is the meaning of life?</h1>
-</section>
-
-<section id="q4">
-    <h1>Why are you doing this to yourself?</h1>
-</section>
-
-<section id="q5">
-    <h1>What is going on?</h1>
-</section>
-
+        </div>
+        <div class="question-footer">
+            
+        </div>
+   
 
 <script src="./Assets/js/script.js"></script>
 </body>
