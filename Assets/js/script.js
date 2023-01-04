@@ -1,55 +1,34 @@
-const question = document.querySelector('#question');
-const answer = Array.from(document.querySelectorAll('#.answer-text'));
+let score = document.getElementById('score');
+let totalScore = document.getElementById('totalScore');
+let countdown = document.getElementById('countdown');
+let count = 0;
+let scoreCount = 0;
+let duration = 0;
+let questionGroup = document.querySelectorAll('.question_group');
+let questionAnswerRow = document.querySelectorAll('.question_group .question_answer_row input');
+let userScore = 0;
 
-let currentQuestion = {}
-let userAnswer = true
-let score = 0
-let questionCounter = 0
-let openQuestion = []
 
-let questions = [
-    {
-        question: 'What is js',
-        option1: '1',
-        option2: '1',
-        option3: '1',
-        option4: '1',
-        answer: '2',
-    },
-    {
-        question: 'What is js',
-        option1: '1',
-        option2: '1',
-        option3: '1',
-        option4: '1',
-        answer: '2',
-    },
-    {
-        question: 'What is js',
-        option1: '1',
-        option2: '1',
-        option3: '1',
-        option4: '1',
-        answer: '2',
-    },
-    {
-        question: 'What is js',
-        option1: '1',
-        option2: '1',
-        option3: '1',
-        option4: '1',
-        answer: '2'
+questionAnswerRow.forEach(function(questionAnswerRow){
+    questionAnswerRow.addEventListener('click', function(){
+
+        setTimeout(function(){
+            next();
+        }, 500)
+    })
+
+
+});
+
+function next(){
+    count += 1;
+    for(var i = 0; i < questionGroup.length; i++){
+        questionGroup[i].className = 'question_group';
     }
-]
-
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 4
-
-startQuizz = () => {
-    questionCounter = 0
-    score = 0
-    openQuestion = [...questions]
-    getNewQuestion()
+    questionGroup[count].className = 'question_group active';
+    if(count == 6){
+        skip.style.display = 'none';
+    }
 }
 
 
