@@ -100,4 +100,3 @@ function theEnd() {
     localStorage.setItem("totalScore, initials")
 }
 
-let
