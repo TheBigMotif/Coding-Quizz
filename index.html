@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,120 +8,131 @@
     <title>Javascript Coding Quizz</title>
     <link rel="stylesheet" href="./Assets/css/style.css" />
 </head>
+
 <body>
-    <div class="question-container">
+
+    <div id="startScreen">
+        <h1>WELCOME TO THE HARDEST CODING QUIZZ EVER EVER</h1>
+        <p>When you answer a question wrong, color will be red! AND
+            25 seconds will be subtracted from the time left!
+            If it's correct, the color will be green!
+            Good luck! (You'll need it.)
+        </p>
+        <button id="startButton">START!</button>
+
+    </div>
+    <div class="question-container" hidden>
         <div class="question-header">
             <span>Score: <span id="score">0</span></span>
-            <span id="countdown">0</span>
-            </div>
-            <div class="question-body">
-            <div class="question_group active">
-                <h4>Welcome to the hardest javascript quizz ever made ever</h4>
-                <div class="question_answer_row">
-                <input type="radio" name="a0" valid="valid">
-                <span>Start</span>
-                </div>
-            </div>
-            <div class="question_group ">
-                <h4>1. What is JS?</h4>
-                <div class="question_answer_row">
+            <div>Time: </div><span id="countdown">0</span>
+        </div>
+        <div class="question-body">
+
+        </div>
+        <div class="question_group active ">
+            <h4>1. What is a boolean?</h4>
+            <div class="question_answer_row">
                 <input type="radio" name="a1">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
+                <span>An emotional weakness</span>
+            </div>
+            <div class="question_answer_row">
                 <input type="radio" name="a1" valid="valid">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
-                <input type="radio" name="a1">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
-                <input type="radio" name="a1">
-                <span>Javascript</span>
-                </div>
-
+                <span>A data type that represents one of two values: true or false</span>
             </div>
-            <div class="question_group">
-                <h4>2. What is a function?</h4>
-                <div class="question_answer_row">
+            <div class="question_answer_row">
+                <input type="radio" name="a1">
+                <span>A religion</span>
+            </div>
+            <div class="question_answer_row">
+                <input type="radio" name="a1">
+                <span>The end of time</span>
+            </div>
+
+        </div>
+        <div class="question_group">
+            <h4>2. What is a function?</h4>
+            <div class="question_answer_row">
                 <input type="radio" name="a2">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
+                <span>The meaning of life</span>
+            </div>
+            <div class="question_answer_row">
+                <input type="radio" name="a2">
+                <span>A way to beat anxiety</span>
+            </div>
+            <div class="question_answer_row">
                 <input type="radio" name="a2" valid="valid">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
-                <input type="radio" name="a2">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
-                <input type="radio" name="a2">
-                <span>Javascript</span>
-                </div>
+                <span>A block of code designed to perform a particular task</span>
             </div>
-            <div class="question_group">
-                <h4>3. What is an array?</h4>
-                <div class="question_answer_row">
-                <input type="radio" name="a3">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
+            <div class="question_answer_row">
+                <input type="radio" name="a2">
+                <span>A virus</span>
+            </div>
+        </div>
+        <div class="question_group">
+            <h4>3. What is an array?</h4>
+            <div class="question_answer_row">
                 <input type="radio" name="a3" valid="valid">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
+                <span>An object that enables storing a collection of multiple items under a single variable name</span>
+            </div>
+            <div class="question_answer_row">
                 <input type="radio" name="a3">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
+                <span>A dinosaur</span>
+            </div>
+            <div class="question_answer_row">
                 <input type="radio" name="a3">
-                <span>Javascript</span>
-                </div>
+                <span>My ex :(</span>
+            </div>
+            <div class="question_answer_row">
+                <input type="radio" name="a3">
+                <span>What my therapist says I need</span>
+            </div>
 
-            </div> 
-            <div class="question_group">
-                <h4>4. Is javascript a videogame?</h4>
-                <div class="question_answer_row">
+        </div>
+        <div class="question_group">
+            <h4>4. Which of the following is a primitive data type?</h4>
+            <div class="question_answer_row">
                 <input type="radio" name="a4">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
+                <span>Tp-Link Dual Band Router</span>
+            </div>
+            <div class="question_answer_row">
+                <input type="radio" name="a4">
+                <span>Alcoholism</span>
+            </div>
+            <div class="question_answer_row">
+                <input type="radio" name="a4">
+                <span>Steve Jobs</span>
+            </div>
+            <div class="question_answer_row">
                 <input type="radio" name="a4" valid="valid">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
-                <input type="radio" name="a4">
-                <span>Javascript</span>
-                </div>
-                 <div class="question_answer_row">
-                <input type="radio" name="a4">
-                <span>Javascript</span>
-                </div>
-
-            </div>
-            <div class="question_group">
-                <h4>Your score: <span id="totalScore">0</span> out of 100</h4>
-                <h4>Submit high score?</h4>
-                <div class="question_answer_row">
-                <input type="radio" name="a4">
-                <span>Yes</span>
-                </div>
-
-            </div>
-
-            <div class="results">
-                <li>High scores</li>
+                <span>String</span>
             </div>
 
         </div>
-        <div class="question-footer">
-            
-        </div>
-   
 
-<script src="./Assets/js/script.js"></script>
+
+
+    </div>
+    <div class="question-footer">
+
+    </div>
+    <div id="endScreen" hidden>
+       
+        <h1>RESULT: <span id="totalScore"></span></h1>  
+       
+        <label for="initials">Type your initials to save your score!</label>
+        <input id="iniScore">
+        <button id="submitButton">Submit!</button>
+
+    </div>
+    <div id="resultScreen" hidden>
+        <h1>RESULTS 2</h1>
+        <h1 id="totalScore"></h1>
+
+    </div>
+
+
+    <script src="./Assets/js/script.js"></script>
 </body>
 <link rel="script" href="./Assets/js/script.js">
+
 </html>
